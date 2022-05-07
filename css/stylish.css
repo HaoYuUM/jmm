@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+body{
+  font-family: "Square Peg", "Helvetica", sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1150px;
+  padding-left: 5px;
+  border: 2px solid;
+  background-color: rgb(200, 130, 90);
+}
+
+.center{
+  max-width: 384px;
+  margin: 0 auto;
+}
+
+a:default{
+  color: #000000;
+}
+
+a:visited{
+  color: rgb(13, 58, 155);
+}
+
+a:link{
+  color: rgb(192, 58, 43);
+}
+
+a:hover{
+  color: rgb(179, 199, 223);
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 0;
+  max-width: 1150px;
+}
+
+#geo{
+  max-width: 200px;
+}
+
+#popu{
+  max-width: 200px;
+}

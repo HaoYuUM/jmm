@@ -9,33 +9,57 @@
 <body>
   <header>
     <h1 id="title">Harold's Favorite Countries</h1>
-    <a class= "button-box"><button type="button" name="button" id="button">Contact Me</button></a>
+    <a class= "button-box"><button type="button" name="button" id="button" onclick="myClick()">Contact Me</button></a>
+    <script type="text/javascript">
+      let isContactShown = false
+      function myClick(){
+        console.log(1)
+        if (!isContactShown) {
+          document.getElementById("button").innerText = "Countries"
+          document.getElementById("contact").innerText = "Contact Information"
+          document.getElementById("email").innerText = "email: hxy361@miami.edu"
+          document.getElementById("phone").innerText = "phone: +1 786 451 5332"
+          document.getElementById("wechat").innerText = "wechat: YoMrShuai"
+          isContactShown = true
+        }else {
+          document.getElementById("button").innerText = "Contact Me"
+          document.getElementById("contact").innerText = "My Three Favorite Countries"
+          document.getElementById("email").innerText = "United states"
+          document.getElementById("phone").innerText = "Canada"
+          document.getElementById("wechat").innerText = "Brazil"
+          isContactShown = false
+        }
+      }
+    </script>
   </header>
   <main>
     <div class="text-box">
-      <h1 class="h-style">My Three Favorite Countries</h1>
-      <p>United states</p>
-      <p>Canada</p>
-      <p>Brazil</p>
+      <h1 class="h-style" id="contact">My Three Favorite Countries</h1>
+      <p id="email">United states</p>
+      <p id="phone">Canada</p>
+      <p id="wechat">Brazil</p>
     </div>
+      <div class="text-box">
+        <img class="map" src="images/world_time.jpg" alt="">
+      </div>
   </main>
   <footer>
     <div class="footer-box">
-      <a href="Page1.html">
+      <a href="countries/usa.html">
         <img src="images/US-flag.jpg" alt="item1" class="footer-image">
         <p class="footer-text">United states</p>
       </a>
     </div>
 
     <div class="footer-box">
-      <a href="Page2.html">
+      <a href="countries/canada.html">
         <img src="images/CA-flag.jpg" alt="item1" class="footer-image">
         <p class="footer-text">Canada</p>
       </a>
     </div>
 
     <div class="footer-box">
-      <a href="Page3.html">
+      <a href="countries/brazil.html">
         <img src="images/BR-flag.jpg" alt="item1" class="footer-image">
         <p class="footer-text">Brazil</p>
       </a>
